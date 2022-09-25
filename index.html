@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- font brand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <link rel="stylesheet" href="dist/output.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <!-- flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Awal Navbar -->
+    <nav data-aos="fade-down" data-aos-duration="1000" class="navbar bg-white shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand font-bold" href="#">Fila</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title font-bold" id="offcanvasNavbarLabel">Fila</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover:font-semibold" href="#drama">Favorite Dramas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover:font-semibold" href="#aktor">Favorite Actors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hover:font-semibold" href="#makanan">Favorite Foods</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Hero -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap md:w-1/2">
+          <div class="w-full px-4">
+            <h1 data-aos="fade-up-right" data-aos-duration="1000" class="text-2xl font-bold"><span class="auto-input"></span></h1>
+          </div>
+          <div class="w-full px-4 md:w-1/2">
+            <img data-aos="fade-up-left" data-aos-duration="1000" src="dist/img/profil.png" alt="profil" width="280" class="rounded-xl" />
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="">
+        <path
+          fill="#e2e8f0"
+          fill-opacity="1"
+          d="M0,256L48,229.3C96,203,192,149,288,133.3C384,117,480,139,576,170.7C672,203,768,245,864,229.3C960,213,1056,139,1152,128C1248,117,1344,171,1392,197.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Hero -->
+
+    <!-- Awal Drama Favorit -->
+    <section id="drama" class="pt-8 bg-slate-200">
+      <div class="container">
+        <h2 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="text-center pb-3 font-bold">Favorite Dramas</h2>
+        <div data-aos="fade-left" data-aos-duration="1000" class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/come.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Come & Hug Me</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/doctors.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Doctors</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/drstr.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Doctor Stranger</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/hospital.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Hospital Playlist</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/kim.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Weightlifting Fairy Kim Bok-Joo</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/lovers.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Lovers of The Red Sky</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/prison.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Prison Playbook</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/sevenday.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Seven Day Queen</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/taxidriver.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Taxi Driver</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/theveil.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">The Veil</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#94a3b8"
+          fill-opacity="1"
+          d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,122.7C672,107,768,117,864,149.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Drama Favorit -->
+
+    <!-- Awal Aktor Favorit -->
+    <section id="aktor" class="pt-8 bg-slate-400">
+      <div class="container">
+        <h2 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="text-center pb-3 font-bold">Favorite Actors</h2>
+        <div data-aos="fade-right" data-aos-duration="1000" class="carousel" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false }'>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/jingoo.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Yeo Jin Goo</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/koong.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Nam Koongmin</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/seyeon.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Jin Se Yeon</p>
+            </div>
+          </div>
+          <div class="card mx-3" style="width: 12rem">
+            <img src="dist/img/yoojung.jpg" class="card-img-top" alt="favorite" />
+            <div class="card-body">
+              <p class="card-text text-center font-bold text-sm">Kim Yoo Jung</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#475569"
+          fill-opacity="1"
+          d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,170.7C672,203,768,245,864,240C960,235,1056,181,1152,138.7C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Aktor Favorit -->
+
+    <!-- Awal Makanan & Minuman Favorit -->
+    <section id="makanan" class="pt-8 bg-slate-600">
+      <div class="container">
+        <h2 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500" class="text-center pb-3 font-bold text-slate-300">Favorite Food</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 px-3">
+            <div data-aos="flip-right" data-aos-duration="1000" class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+              <img src="dist/img/mie.jpeg" alt="mie" class="w-full" />
+              <div class="py-8 px-6">
+                <h3 class="mb-3 truncate font-semibold">Mie Ayam</h3>
+                <p class="text-base font-medium">
+                  Mi ayam adalah hidangan khas Indonesia yang terbuat dari mi gandum kuning yang <span class="dots">...</span
+                  ><span class="text hidden"
+                    >dibumbui dengan daging ayam yang biasanya dipotong dadu. Hidangan ini banyak terpengaruh dengan teknik penyajian kuliner yang digunakan dalam hidangan Tionghoa. Tapi sebenarnya makanan favoritnya adalah
+                    <mark>buncis</mark>, karena tidak estetik jadi dia minta diganti sama mie ayam aja.</span
+                  >
+                </p>
+                <button class="read-more-btn bg-blue-500 px-2 rounded text-white py-2 text-sm">Read More</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <div data-aos="flip-left" data-aos-duration="1000" class="overflow-hidden rounded-xl bg-white shadow-lg">
+              <img src="dist/img/air.jpeg" alt="air" class="w-full" />
+              <div class="py-8 px-6">
+                <h3 class="mb-3 truncate font-semibold">Air Mineral</h3>
+                <p class="pb-[14px] text-base font-medium">Ga usah dijelasin, siapa juga yang ga tau air putih, <del>tapi katanya dia bisa minum 1 liter air putih dalam satu nafas, wih keren.</del></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#1e293b"
+          fill-opacity="1"
+          d="M0,224L48,202.7C96,181,192,139,288,138.7C384,139,480,181,576,165.3C672,149,768,75,864,80C960,85,1056,171,1152,186.7C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Makanan & Minuman Favorit -->
+
+    <!-- Awal Footer -->
+    <footer class="py-3 text-center bg-slate-800">
+      <p class="font-semibold text-slate-200 text-xs animate-bounce">Created With <span>❤️</span> By <a href="" class="italic no-underline text-slate-200">Eric Pratama</a> ©️2022</p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Back To top Start -->
+    <a href="#home" class="fixed right-4 bottom-4 z-50 hidden h-8 w-8 items-center justify-center rounded-full bg-blue-900 pb-1 hover:animate-pulse" id="to-top"><span class="mt-2 block h-2 w-2 rotate-45 border-t-2 border-l-2"></span></a>
+    <!-- Back To top End -->
+
+    <!-- flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="dist/js/script.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-input", {
+        strings: ["Nafilah Ramadhanti", "21 October 2003"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
